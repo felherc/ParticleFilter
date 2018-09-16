@@ -1,5 +1,5 @@
 # ParticleFilter
-A generic data assimilation algorithm to estimate the initial state of a model based on observations.
+A generic data assimilation algorithm to estimate the initial state of a system based on a model and a set of observations.
 
 Citation: Hernández, F., & Liang, X. (2018). "Hybridizing Bayesian and variational data assimilation for high-resolution hydrologic forecasting". Hydrol. Earth Syst. Sci.
 
