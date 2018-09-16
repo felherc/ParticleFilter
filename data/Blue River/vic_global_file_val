@@ -1,0 +1,86 @@
+NLAYER				3				# number of layers
+TIME_STEP			24				# model time step in hours (= 24 for water balance)
+RESOLUTION			1				# model grid cell resolution
+STARTYEAR			1993				# year model simulation starts
+STARTMONTH			6				# month model simulation starts
+STARTDAY			1				# day model simulation starts
+STARTHOUR			0				# hour model simulation starts
+ENDYEAR     		1997    			# year model simulation ends   }
+ENDMONTH    		12 				# month model simulation ends  }Don't use if NRECS used
+ENDDAY      		31 		     		# day model simulation ends    }
+#NRECS				8768				# number of timesteps over which to run model
+WIND_H				10.0				# height of wind speed measurement
+MEASURE_H			2.0				# height of humidity measurement
+#NODES				3				# number of soil thermal nodes 
+MAX_SNOW_TEMP		1.5				# maximum temperature at which snow can fall
+MIN_RAIN_TEMP		-0.5				# minimum temperature at which rain can fall
+SKIPYEAR      		0       			# years to skip in writing out flux files
+QUICK_FLUX     		TRUE    			#if TRUE model will use the method by LIANG(1999)
+
+FULL_ENERGY			FALSE				# calculate full energy balance
+FROZEN_SOIL			FALSE				# calculate frozen soils
+DIST_PRCP			FALSE				# use distributed precipitation
+#CALC_SNOW_FLUX			FALSE				# compute thermal flux through snow pack
+COMPRESS			FALSE				# compress input and output files when done
+CORRPREC			FALSE				# correct precipitation for gauge undercatch
+GRID_DECIMAL			4				# number of decimals to use in gridded file names
+#SNOW_BAND     			6	../CAnormal_PARAMETER/CA_watershed_snowband.txt # number of snow band elevations to use & snowband file
+PRT_SNOW_BAND  			FALSE 		  		# print snow variables
+ARC_SOIL       			FALSE   			# read soil parameters from ARC/INFO ASCII grids
+SNOW_STEP			24      			# time step in hours to solve snow bands
+#FORCE_DT			24				# time step of two input files
+ROOT_ZONES			3				# number of root zones in veg parameter file
+PREC_EXPT			0.6				# fraction of grid cell receiving precip
+SCE_DT         			24	 			# SCE time step in terms of the model time step in hours
+SCEYEAR        			1996				# SCE end year
+SCEMONTH       			5       			# SCE end month
+SCEDAY         			7		   	    	# SCE end day
+SCEHOUR        			0       			# SCE end hour
+SCERUN	    			FALSE	   	 		# optimize model parameters
+OPT_SCALE  			1				# scale for wavelet improvement (calibration)
+
+STATENAME	state
+STATEYEAR	1997
+STATEMONTH	10
+STATEDAY	1
+BINARY_STATE_FILE	FALSE
+
+FORCING1        Forcing/cell_
+N_TYPES         7
+FORCE_TYPE      SKIP
+FORCE_TYPE      SKIP
+FORCE_TYPE      SKIP
+FORCE_TYPE      PREC
+FORCE_TYPE      TMAX
+FORCE_TYPE      TMIN
+FORCE_TYPE      WIND
+FORCE_FORMAT    ASCII
+FORCE_DT        24
+
+FORCING2	FALSE
+
+SOIL	Parameters/soil.dat
+ 
+VEGPARAM	Parameters/vegparams.dat
+ 
+VEGLIB		Parameters/vegetation_library.dat
+GLOBAL_LAI   TRUE 
+
+RESULT_DIR	Output/
+
+CELL_FRACTIONS_FILE	PARAMETERS/cell_fractions.dat
+
+ROUTING_SCHEME_OPTION		1		
+
+K_STORAGE			1.52
+
+GRIDSIZE		0.125		# grid cell size in degree
+WATERSHED_AREA		1231		# watershed area in km^2
+
+RIVER_NET_FILE 			PARAMETERS/blue_riv.dat 		# filename for river flow network file
+OVERLAND_NET_FILE		PARAMETERS/blue_rtn.dat		# filename for overland flow network file
+GRID_LIST_FILE			PARAMETERS/cell_lst.dat		# filename for grid coordinate lists file
+RIVER_WIDTH				42.46					# river width for all orders unit: m
+manningRiver			0.0288			# manning coefficient of river channel By Zhiqun
+manningOverland			0.2787			# manning coefficient of overland By Zhiqun
+baseflow_velocity		1.5			# baseflow_velocity by Zhiqun 2010 unit: mm/s

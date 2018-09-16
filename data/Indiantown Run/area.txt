@@ -1,0 +1,12 @@
+[AREA]
+Coordinate System    = USER_DEFINED
+Extreme North        = 2105500
+Extreme West         = 1615600
+Center Latitude      = 40.46
+Center Longitude     = -76.62
+Time Zone Meridian   = 17
+Number of Rows       = 55
+Number of Columns    = 60
+Grid spacing         = 100
+Point north			 = 2103000
+Point east			 = 1618500

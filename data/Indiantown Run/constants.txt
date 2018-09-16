@@ -1,0 +1,13 @@
+[CONSTANTS]
+Ground Roughness     = 0.02
+Snow Roughness       = 0.01
+Rain Threshold       = 0.
+Snow Threshold       = 0.5
+Snow Water Capacity  = 0.03
+Reference Height     = 43.0
+Rain LAI Multiplier  = 0.0001
+Snow LAI Multiplier  = 0.0005
+Min Intercepted Snow = 0.005
+Outside Basin Value  = 0
+Temperature Lapse Rate   = -0.006
+Precipitation Lapse Rate =  0.007

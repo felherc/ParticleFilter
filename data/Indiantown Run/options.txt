@@ -1,0 +1,27 @@
+[OPTIONS]
+Format               = BIN
+Extent               = BASIN
+Gradient             = TOPOGRAPHY
+Flow Routing         = NETWORK
+Sensible Heat Flux   = FALSE
+Sediment	     	 = FALSE
+Overland Routing     = KINEMATIC
+Kinematic Option 	 = MACCORMACKIMPLICIT
+Infiltration	     = STATIC
+Interpolation        = VARCRESS
+MM5                  = FALSE
+QPF                  = FALSE
+PRISM                = FALSE
+Canopy radiation attenuation mode = FIXED
+Shading              = FALSE
+Snotel               = FALSE
+Outside              = TRUE
+Rhoverride           = FALSE
+Precipitation Source = STATION
+Wind Source          = STATION
+Temperature lapse rate = CONSTANT
+Precipitation lapse rate = CONSTANT
+Cressman radius      = 10
+Cressman stations    = 4
+Stream Temperature   = FALSE
+Canopy Shading       = FALSE
