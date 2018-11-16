@@ -1,7 +1,7 @@
 # ParticleFilter
 A generic data assimilation algorithm to estimate the initial state of a model based on observations.
 
-Citation: Hernández, F., & Liang, X. (2018). "Hybridizing Bayesian and variational data assimilation for high-resolution hydrologic forecasting". Hydrol. Earth Syst. Sci.
+Citation: Hern�ndez, F. and Liang, X.: Hybridizing Bayesian and variational data assimilation for high-resolution hydrologic forecasting, Hydrol. Earth Syst. Sci., 22, 5759-5779, https://doi.org/10.5194/hess-22-5759-2018, 2018.
 
 This software was developed at the University of Pittsburgh by Felipe Hernández under the supervision of Xu Liang, with funding from the U.S. Department of Transportation (award OASRTRS-14-H-PIT) and through the William Kepler Whiteford Professorship of the University of Pittsburgh.
 

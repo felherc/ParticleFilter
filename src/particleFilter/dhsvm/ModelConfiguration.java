@@ -24,8 +24,9 @@ import dhsvm.stream.StreamNetwork;
 /**
  * Contains the information of a DHSVM model except its temporal span and its initial state
  * 
- * Citation: Hernández, F., & Liang, X. (2018). "Hybridizing Bayesian and variational data
- * assimilation for high-resolution hydrologic forecasting". Hydrol. Earth Syst. Sci.
+ * Citation: Hernández, F. and Liang, X.: Hybridizing Bayesian and variational data assimilation
+ * for high-resolution hydrologic forecasting, Hydrol. Earth Syst. Sci., 22, 5759-5779,
+ * https://doi.org/10.5194/hess-22-5759-2018, 2018.
  * 
  * @author Felipe Hernández (developer)
  * @author Xu Liang (advisor)
